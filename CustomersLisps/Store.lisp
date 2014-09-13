@@ -1,0 +1,7 @@
+(Defun c:store ()
+  (setvar “cmdecho” 0)
+  (initdia)
+  (command “saveas” “DXF” “V” “2004” “B” “”)
+  (setvar “cmdecho” 1)
+  (princ)
+  )
